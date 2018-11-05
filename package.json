@@ -1,6 +1,6 @@
 {
   "name": "ts-repofs",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Typescript port of repofs",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
