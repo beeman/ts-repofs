@@ -1,3 +1,33 @@
-export * from './lib/async';
-export * from './lib/hash';
-export * from './lib/number';
+export * from './lib/async'
+export * from './lib/hash'
+export * from './lib/number'
+
+export * from './lib/drivers/github'
+export * from './lib/models/repositoryState'
+export * from './lib/models/workingState'
+export * from './lib/models/treeEntry'
+export * from './lib/models/author'
+export * from './lib/models/branch'
+export * from './lib/models/commitBuilder'
+export * from './lib/models/conflict'
+export * from './lib/models/treeConflict'
+export * from './lib/models/file'
+export * from './lib/models/blob'
+export * from './lib/models/fileDiff'
+export * from './lib/models/comparison'
+
+export * from './lib/constants/changeType'
+export * from './lib/constants/errors'
+
+export * from './lib/utils/working'
+export * from './lib/utils/filestree'
+export * from './lib/utils/file'
+export * from './lib/utils/localFile'
+export * from './lib/utils/blob'
+export * from './lib/utils/directory'
+export * from './lib/utils/repo'
+export * from './lib/utils/branches'
+export * from './lib/utils/change'
+export * from './lib/utils/commit'
+export * from './lib/utils/conflict'
+export * from './lib/utils/remote'

@@ -1,5 +1,5 @@
-import { createHash } from 'crypto';
-import shaJs from 'sha.js';
+import { createHash } from 'crypto'
+import shaJs from 'sha.js'
 
 /**
  * Calculate the sha256 digest of a string.
@@ -16,7 +16,7 @@ import shaJs from 'sha.js';
 export function sha256(message: string): string {
   return shaJs('sha256')
     .update(message)
-    .digest('hex');
+    .digest('hex')
 }
 
 /**
@@ -34,5 +34,5 @@ export function sha256(message: string): string {
 export function sha256Native(message: string): string {
   return createHash('sha256')
     .update(message)
-    .digest('hex');
+    .digest('hex')
 }

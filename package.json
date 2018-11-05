@@ -52,7 +52,17 @@
     "node": ">=8.9"
   },
   "dependencies": {
-    "sha.js": "^2.4.11"
+    "array-flatten": "^2.1.1",
+    "axios": "^0.18.0",
+    "immutable": "^4.0.0-rc.12",
+    "is": "^3.2.1",
+    "md5-hex": "^2.0.0",
+    "mime-types": "^2.1.21",
+    "modify-values": "^1.0.1",
+    "q": "^1.5.1",
+    "sha.js": "^2.4.11",
+    "unique-by": "^1.0.0",
+    "urljoin.js": "^1.0.0"
   },
   "devDependencies": {
     "ava": "1.0.0-beta.7",
@@ -86,7 +96,9 @@
     }
   },
   "prettier": {
-    "singleQuote": true
+    "singleQuote": true,
+    "semi": false,
+    "trailingComma": "all"
   },
   "nyc": {
     "exclude": [

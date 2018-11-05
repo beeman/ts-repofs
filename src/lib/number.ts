@@ -20,7 +20,32 @@
  * @anotherNote   Some other value.
  */
 export function double(value: number): number {
-  return value * 2;
+  return value * 2
+}
+
+/**
+ * Multiplies a value by 3. (Also a full example of Typedoc's functionality.)
+ *
+ * ### Example (es module)
+ * ```js
+ * import { triple } from 'typescript-starter'
+ * console.log(triple(4))
+ * // => 12
+ * ```
+ *
+ * ### Example (commonjs)
+ * ```js
+ * var triple = require('typescript-starter').triple;
+ * console.log(triple(4))
+ * // => 12
+ * ```
+ *
+ * @param value   Comment describing the `value` parameter.
+ * @returns       Comment describing the return type.
+ * @anotherNote   Some other value.
+ */
+export function triple(value: number): number {
+  return value * 3
 }
 
 /**
@@ -42,5 +67,5 @@ export function double(value: number): number {
  */
 export function power(base: number, exponent: number): number {
   // This is a proposed es7 operator, which should be transpiled by Typescript
-  return base ** exponent;
+  return base ** exponent
 }

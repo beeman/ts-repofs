@@ -1,34 +1,61 @@
 {
-  "extends": ["tslint:latest", "tslint-config-prettier", "tslint-immutable"],
+  "extends": [
+    "tslint:latest",
+    "tslint-config-prettier",
+    "tslint-immutable"
+  ],
   "rules": {
-    "interface-name": [true, "never-prefix"],
+    "interface-name": [
+      true,
+      "never-prefix"
+    ],
     // TODO: allow devDependencies only in **/*.spec.ts files:
     // waiting on https://github.com/palantir/tslint/pull/3708
-    "no-implicit-dependencies": [true, "dev"],
-
+    "no-implicit-dependencies": [
+      true,
+      "dev"
+    ],
+    "prefer-conditional-expression": false,
     /* tslint-immutable rules */
     // Recommended built-in rules
     "no-var-keyword": true,
-    "no-parameter-reassignment": true,
-    "typedef": [true, "call-signature"],
-
-    // Immutability rules
-    "readonly-keyword": true,
-    "readonly-array": true,
-    "no-let": true,
-    "no-object-mutation": true,
-    "no-delete": true,
-    "no-method-signature": true,
-
-    // Functional style rules
-    "no-this": true,
-    "no-class": true,
-    "no-mixed-interface": true,
-    "no-expression-statement": [
-      true,
-      { "ignore-prefix": ["console.", "process.exit"] }
+    //    "no-parameter-reassignment": true,
+    "typedef": [
+      true
     ],
-    "no-if-statement": true
+    // Immutability rules
+    //    "readonly-keyword": true,
+    //    "readonly-array": true,
+    //    "no-let": true,
+    //    "no-object-mutation": true,
+    //    "no-delete": true,
+    //    "no-method-signature": true,
+
+    "no-console": false,
+    "no-unused-variable": false,
+    "no-unused-expression": false,
+    "no-empty": false,
+    // Functional style rules
+    //    "no-this": false,
+    //    "no-class": false,
+    //    "no-mixed-interface": true,
+    //    "no-expression-statement": [
+    //      true,
+    //      { "ignore-prefix": ["console.", "process.exit"] }
+    //    ],
+    "no-if-statement": false,
     /* end tslint-immutable rules */
+    "max-classes-per-file": false,
+    "semicolon": [
+      true,
+      "never"
+    ],
+    "prefer-for-of": false,
+    "no-shadowed-variable": false,
+    "object-literal-sort-keys": false,
+    "only-arrow-functions": false,
+    "prefer-readonly": [
+      false
+    ]
   }
 }
