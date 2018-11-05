@@ -110,14 +110,12 @@ export class GitHubDriver extends Driver {
   public flushCommit(commitBuilder) {
     // Create blobs required
     const blobPromises = commitBuilder.getBlobs().map((blob, filePath) => {
-      return this
-        .post('git/blobs', {
-          content: blob.getAsBase64(),
-          encoding: 'base64',
-        })
-        .then(ghBlob => {
-          return [filePath, ghBlob.sha]
-        })
+      return this.post('git/blobs', {
+        content: blob.getAsBase64(),
+        encoding: 'base64',
+      }).then(ghBlob => {
+        return [filePath, ghBlob.sha]
+      })
     })
 
     // Wait for all request to finish
@@ -524,7 +522,8 @@ function normListedCommit(ghCommit) {
     sha: ghCommit.sha,
     message: ghCommit.commit.message || 'no message',
     // author: getCompleteAuthor(ghCommit),
-    date: ghCommit.commit.author && ghCommit.commit.author.date || 'no author',
+    date:
+      (ghCommit.commit.author && ghCommit.commit.author.date) || 'no author',
     files: ghCommit.files || [],
     parents: ghCommit.parents && ghCommit.parents.map(c => c.sha),
   })

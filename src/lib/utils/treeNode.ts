@@ -22,8 +22,6 @@ export class TreeNode extends Record(DEFAULTS) {
   public getChildren: () => any
   public getValue: () => any
   public hasChildren: () => boolean
-
-
 }
 
 function getter(property) {

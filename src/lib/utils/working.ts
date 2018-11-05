@@ -83,8 +83,8 @@ export function fetch(driver, branch) {
 }
 
 export const WorkingUtils = {
-    getMergedFileSet,
-    getMergedTreeEntries,
-    fetch,
-    findSha
+  getMergedFileSet,
+  getMergedTreeEntries,
+  fetch,
+  findSha,
 }
